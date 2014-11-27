@@ -1,0 +1,13 @@
+drop table people;
+create EXTERNAL table IF NOT EXISTS people(name string,age int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+stored as textfile
+location '/test/people';
+
+people.txt file:
+chris,20
+asia,22
+manda,19
+joy,10
+cici,15
+pypy,30
