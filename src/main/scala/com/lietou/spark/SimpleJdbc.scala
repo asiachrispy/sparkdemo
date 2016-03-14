@@ -18,7 +18,7 @@ object SimpleJdbc {
 
   def createConnection() = {
     Class.forName("com.mysql.jdbc.Driver").newInstance()
-    DriverManager.getConnection("jdbc:mysql://10.10.10.64:21008/recommend?characterEncoding=utf-8&autoReconnect=true&maxReconnects=1&initialTimeout=1&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull&connectTimeout=50000&socketTimeout=50000", "root", "@WSX#EDC6yhn")
+    DriverManager.getConnection("")
   }
 
   def extractValues(r: ResultSet) = {
